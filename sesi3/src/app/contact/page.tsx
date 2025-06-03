@@ -5,7 +5,6 @@ import {
   NavItems,
   MobileNav,
   NavbarLogo,
-  NavbarButton,
   MobileNavHeader,
   MobileNavToggle,
   MobileNavMenu,
@@ -226,7 +225,7 @@ export default function ContactPage() {
             
             {submitSuccess && (
               <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-900 text-green-800 dark:text-green-300 rounded-lg p-4 mb-6">
-                Thank you for your message! I'll get back to you as soon as possible.
+                Thank you for your message! I will get back to you as soon as possible.
               </div>
             )}
 

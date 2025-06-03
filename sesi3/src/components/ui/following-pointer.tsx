@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import { motion, AnimatePresence, useMotionValue } from "motion/react";
+import { motion, AnimatePresence, useMotionValue, MotionValue } from "motion/react";
 import { cn } from "@/lib/utils";
 
 export const FollowerPointerCard = ({
@@ -16,7 +16,7 @@ export const FollowerPointerCard = ({
   const y = useMotionValue(0);
   const ref = React.useRef<HTMLDivElement>(null);
   const [rect, setRect] = useState<DOMRect | null>(null);
-  const [isInside, setIsInside] = useState<boolean>(false); // Add this line
+  const [isInside, setIsInside] = useState<boolean>(false);
 
   useEffect(() => {
     if (ref.current) {
@@ -63,8 +63,8 @@ export const FollowPointer = ({
   y,
   title,
 }: {
-  x: any;
-  y: any;
+  x: MotionValue<number>;
+  y: MotionValue<number>;
   title?: string | React.ReactNode;
 }) => {
   const colors = [

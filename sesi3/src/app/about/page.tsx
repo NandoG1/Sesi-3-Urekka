@@ -159,16 +159,16 @@ export default function AboutPage() {
             <h2 className="text-2xl font-semibold mb-6">Who am I?</h2>
             <div className="space-y-4 text-neutral-700 dark:text-neutral-300">
               <p>
-                Hi there! I'm <span className="font-semibold">Fernando Gunawan</span>, a passionate web developer with a keen eye for creating beautiful, functional websites and applications.
+                Hi there! I <span className="font-semibold">Fernando Gunawan</span>, a passionate web developer with a keen eye for creating beautiful, functional websites and applications.
               </p>
               <p>
-                With several years of experience in the field, I've developed a deep understanding of both frontend and backend technologies. My approach combines technical expertise with creativity to deliver solutions that not only work flawlessly but also provide an exceptional user experience.
+                With several years of experience in the field, I have developed a deep understanding of both frontend and backend technologies. My approach combines technical expertise with creativity to deliver solutions that not only work flawlessly but also provide an exceptional user experience.
               </p>
               <p>
-                I believe that the best digital products come from understanding user needs and business goals. That's why I focus on creating websites that are not just visually appealing but also intuitive, accessible, and optimized for performance.
+                I believe that the best digital products come from understanding user needs and business goals. Thats why I focus on creating websites that are not just visually appealing but also intuitive, accessible, and optimized for performance.
               </p>
               <p>
-                When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing my knowledge through writing and mentoring.
+                When I am not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing my knowledge through writing and mentoring.
               </p>
             </div>
           </motion.div>
@@ -255,7 +255,7 @@ export default function AboutPage() {
         >
           <h2 className="text-2xl font-semibold mb-4">Interested in working together?</h2>
           <p className="max-w-2xl mx-auto mb-8 text-neutral-700">
-            I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.
+            I am always open to discussing new projects, creative ideas or opportunities to be part of your vision.
           </p>
           <Button onClick={() => router.push('/contact')}>
             Get In Touch

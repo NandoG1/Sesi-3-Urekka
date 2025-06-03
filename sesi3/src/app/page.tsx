@@ -5,7 +5,6 @@ import {
   NavItems,
   MobileNav,
   NavbarLogo,
-  NavbarButton,
   MobileNavHeader,
   MobileNavToggle,
   MobileNavMenu,
@@ -14,9 +13,7 @@ import { useState } from "react";
 import Background from "@/components/ui/background";
 import {motion} from 'framer-motion';
 import Typewriter from 'typewriter-effect';
-import { Type } from "lucide-react";
 import FloatingCode from "@/components/ui/floating-code";
-import { AuroraBackground } from "@/components/ui/aurora-background";
 import AnimatedCursor from "@/components/ui/animated-cursor";
 
 export default function NavbarDemo() {
@@ -103,7 +100,7 @@ export default function NavbarDemo() {
             className="mb-8"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              <span className="blue-rainbow-text">Hello, I'm</span>
+              <span className="blue-rainbow-text">Hello, I am</span>
               <div className="h-16 md:h-20 lg:h-24 flex items-center justify-center">
                 <Typewriter options={{
                   strings: ["Fernando Gunawan", "a Web Developer", "a Problem Solver"],
