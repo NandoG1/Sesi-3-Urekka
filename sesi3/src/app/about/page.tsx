@@ -12,7 +12,7 @@ import {
 import { useState } from "react";
 import Background from "@/components/ui/background";
 import { motion } from 'framer-motion';
-import { Code, Palette, Layout, Globe, Zap, BookOpen } from "lucide-react";
+// import { Code, Palette, Layout, Globe, Zap, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 
