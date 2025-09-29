@@ -88,9 +88,9 @@ export default function Resume(){
 
               <div className="mx-auto container py-35 flex justify-center items-center flex-col ">
                 <div className="mb-10">
-                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">My Mini Portofolio</h1>
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">My Mini Portfolio</h1>
                     <div className="w-24 h-1 bg-black mx-auto mb-6"></div>
-                    <p className="text-xl text-gray-600 max-w-3xl text-center">Explore my Mini Portofolio!</p> 
+                    <p className="text-xl text-gray-600 max-w-3xl text-center">Explore my Mini Portfolio!</p> 
                 </div>
                 <iframe src="/Portofolio_BNCC.pdf" className="w-full h-[80vh]"></iframe>
             </div>
