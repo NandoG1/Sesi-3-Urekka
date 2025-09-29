@@ -65,9 +65,9 @@ export default function ContactPage() {
     
     try {
       // EmailJS configuration
-      const serviceId = process.env.NEXT_PRIVATE_EMAILJS_SERVICE_ID || 'service_default';
-      const templateId = process.env.NEXT_PRIVATE_EMAILJS_TEMPLATE_ID || 'template_default';
-      const publicKey = process.env.NEXT_PRIVATE_EMAILJS_PUBLIC_KEY || 'your_public_key';
+      const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || 'service_default';
+      const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || 'template_default';
+      const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || 'your_public_key';
 
       // Template parameters for EmailJS
       const templateParams = {
