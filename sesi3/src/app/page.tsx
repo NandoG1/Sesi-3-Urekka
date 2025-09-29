@@ -103,7 +103,7 @@ export default function NavbarDemo() {
               <span className="blue-rainbow-text">Hello, I am</span>
               <div className="h-16 md:h-20 lg:h-24 flex items-center justify-center">
                 <Typewriter options={{
-                  strings: ["Fernando Gunawan", "a Web Developer", "a Problem Solver"],
+                  strings: ["Fernando Gunawan", "an AI Enthusiast", "a Problem Solver"],
                   autoStart: true,
                   loop: true
                 }} />
@@ -111,7 +111,7 @@ export default function NavbarDemo() {
             </h1>
 
             <p className="text-lg md:text-xl mb-10 max-w-2xl mx-auto text-neutral-700">
-              I create modern websites and applications with a focus on user experience and performance.
+              I build websites and develop AI models, focusing on usability, performance, and real-world impact.
             </p>
           </motion.div>
 

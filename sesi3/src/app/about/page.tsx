@@ -145,7 +145,7 @@ export default function AboutPage() {
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">About Me</h1>
           <div className="w-24 h-1 bg-black mx-auto mb-6"></div>
           <p className="text-lg md:text-xl max-w-2xl mx-auto text-neutral-700">
-            Get to know more about me, my background, and what drives my passion for web development.
+            Get to know more about me, my background, and what drives my passion for Computer Science.
           </p>
         </motion.div>
 
@@ -158,16 +158,16 @@ export default function AboutPage() {
             <h2 className="text-2xl font-semibold mb-6">Who am I?</h2>
             <div className="space-y-4 text-neutral-700 dark:text-neutral-300">
               <p>
-                Hi there! I <span className="font-semibold">Fernando Gunawan</span>, a passionate web developer with a keen eye for creating beautiful, functional websites and applications.
+                Hi, I am <span className="font-semibold">Fernando Gunawan</span> a Computer Science student at BINUS University who loves exploring Artificial Intelligence.
               </p>
               <p>
-                With several years of experience in the field, I have developed a deep understanding of both frontend and backend technologies. My approach combines technical expertise with creativity to deliver solutions that not only work flawlessly but also provide an exceptional user experience.
+                My journey has been a mix of learning, teaching, and building. As a Software Lab Assistant and Academic Mentor, I have had the chance to guide fellow students in subjects like programming, web development, and data warehousing. Being part of UREEKA, a tech organization on campus, also gave me hands on experience working in teams to build websites with AI features and even join competitions together as a team.
               </p>
               <p>
-                I believe that the best digital products come from understanding user needs and business goals. Thats why I focus on creating websites that are not just visually appealing but also intuitive, accessible, and optimized for performance.
+                I also passionate about research, one of my papers was accepted at the GECOST International Conference, which encouraged me to keep exploring how AI can solve real problems.
               </p>
               <p>
-                When I am not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing my knowledge through writing and mentoring.
+                At the core, I love creating solutions that are not only smart but also simple, useful, and enjoyable to use.
               </p>
             </div>
           </motion.div>
@@ -186,16 +186,12 @@ export default function AboutPage() {
                 <span className="text-neutral-700">Fernando Gunawan</span>
               </div>
               <div className="flex">
-                <span className="font-semibold w-32">Experience:</span>
-                <span className="text-neutral-700">1+ Years</span>
-              </div>
-              <div className="flex">
                 <span className="font-semibold w-32">Location:</span>
                 <span className="text-neutral-700">Jakarta, Indonesia</span>
               </div>
               <div className="flex">
                 <span className="font-semibold w-32">Email:</span>
-                <span className="text-neutral-700">fernando.gunawan003@binus.ac.id</span>
+                <span className="text-neutral-700">fernandogunawan291105@gmail.com</span>
               </div>
               <div className="flex">
                 <span className="font-semibold w-32">Education:</span>
@@ -208,18 +204,16 @@ export default function AboutPage() {
             </div>
 
             <div className="flex flex-wrap gap-2 pt-4">
-              <span className="px-3 py-1 bg-neutral-100 rounded-full text-sm">JavaScript</span>
+              <span className="px-3 py-1 bg-neutral-100 rounded-full text-sm">Python</span>
+              <span className="px-3 py-1 bg-neutral-100 rounded-full text-sm">SQL</span>
+              <span className="px-3 py-1 bg-neutral-100 rounded-full text-sm">Java</span>
               <span className="px-3 py-1 bg-neutral-100 rounded-full text-sm">React</span>
-              <span className="px-3 py-1 bg-neutral-100 rounded-full text-sm">Next.js</span>
-              <span className="px-3 py-1 bg-neutral-100 rounded-full text-sm">TypeScript</span>
-              <span className="px-3 py-1 bg-neutral-100 rounded-full text-sm">Node.js</span>
-              <span className="px-3 py-1 bg-neutral-100 rounded-full text-sm">Tailwind CSS</span>
               <span className="px-3 py-1 bg-neutral-100 rounded-full text-sm">UI/UX</span>
             </div>
           </motion.div>
         </div>
 
-        <motion.div
+        {/* <motion.div
           initial="hidden"
           animate="visible"
           variants={containerVariants}
@@ -244,7 +238,7 @@ export default function AboutPage() {
               </motion.div>
             ))}
           </div>
-        </motion.div>
+        </motion.div> */}
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}

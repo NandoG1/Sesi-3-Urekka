@@ -12,8 +12,8 @@ export default function FloatingCode(){
 {`const Portofolio = () => {
 
     const [skills, setSkills] = useState([
-        'React', 'Next.js', 'TypeScript',
-        'Tailwind CSS', 'Framer Motion'
+        'React', 'Python', 'Java',
+        'SQL', 'Machine Learning'
     ]);
 
     return (

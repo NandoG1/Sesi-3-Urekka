@@ -13,6 +13,7 @@ import { useState } from "react";
 import Background from "@/components/ui/background";
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from "lucide-react";
+import emailjs from '@emailjs/browser';
 
 export default function ContactPage() {
   const navItems = [
@@ -47,6 +48,7 @@ export default function ContactPage() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [submitError, setSubmitError] = useState("");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -59,21 +61,58 @@ export default function ContactPage() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitError("");
     
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
-    setIsSubmitting(false);
-    setSubmitSuccess(true);
-    setFormData({
-      name: "",
-      email: "",
-      subject: "",
-      message: ""
-    });
-    
-    setTimeout(() => {
-      setSubmitSuccess(false);
-    }, 5000);
+    try {
+      // EmailJS configuration
+      const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || 'service_default';
+      const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || 'template_default';
+      const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || 'your_public_key';
+
+      // Template parameters for EmailJS
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+        to_email: 'fernandogunawan291105@gmail.com',
+        reply_to: formData.email,
+      };
+
+      // Send email using EmailJS
+      const response = await emailjs.send(
+        serviceId,
+        templateId,
+        templateParams,
+        publicKey
+      );
+
+      console.log('Email sent successfully:', response);
+      
+      setIsSubmitting(false);
+      setSubmitSuccess(true);
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: ""
+      });
+      
+      // Hide success message after 5 seconds
+      setTimeout(() => {
+        setSubmitSuccess(false);
+      }, 5000);
+      
+    } catch (error) {
+      console.error('Email sending failed:', error);
+      setIsSubmitting(false);
+      setSubmitError("Failed to send message. Please try again or contact me directly at fernandogunawan291105@gmail.com");
+      
+      // Hide error message after 5 seconds
+      setTimeout(() => {
+        setSubmitError("");
+      }, 5000);
+    }
   };
 
   const contactInfo = [
@@ -225,7 +264,13 @@ export default function ContactPage() {
             
             {submitSuccess && (
               <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-900 text-green-800 dark:text-green-300 rounded-lg p-4 mb-6">
-                Thank you for your message! I will get back to you as soon as possible.
+                Thank you for your message! I have received it and will get back to you as soon as possible.
+              </div>
+            )}
+
+            {submitError && (
+              <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-900 text-red-800 dark:text-red-300 rounded-lg p-4 mb-6">
+                {submitError}
               </div>
             )}
 
@@ -275,7 +320,7 @@ export default function ContactPage() {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 rounded-lg border border-neutral-300 dark:border-neutral-700 focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 focus:border-transparent dark:bg-neutral-800 transition-colors"
-                  placeholder="Project Inquiry"
+                  placeholder="Title"
                 />
               </div>
 
@@ -291,7 +336,7 @@ export default function ContactPage() {
                   required
                   rows={6}
                   className="w-full px-4 py-3 rounded-lg border border-neutral-300 dark:border-neutral-700 focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 focus:border-transparent dark:bg-neutral-800 transition-colors resize-none"
-                  placeholder="Hello, I'd like to discuss a potential project..."
+                  placeholder="Hello, I like to discuss about..."
                 ></textarea>
               </div>
 
