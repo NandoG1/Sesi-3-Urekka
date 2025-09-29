@@ -42,59 +42,59 @@ export default function AboutPage() {
     }
   ];
 
-  const skills = [
-    {
-      icon: <Code size={24} />,
-      title: "Frontend Development",
-      description: "Building responsive and interactive user interfaces with React, Next.js, and modern CSS frameworks."
-    },
-    {
-      icon: <Layout size={24} />,
-      title: "UI/UX Design",
-      description: "Creating intuitive and visually appealing designs focused on user experience and accessibility."
-    },
-    {
-      icon: <Zap size={24} />,
-      title: "Performance Optimization",
-      description: "Improving website speed and efficiency through code optimization and modern best practices."
-    },
-    {
-      icon: <Globe size={24} />,
-      title: "Web Applications",
-      description: "Developing full-stack web applications with secure authentication and database integration."
-    },
-    {
-      icon: <Palette size={24} />,
-      title: "Creative Solutions",
-      description: "Solving complex problems with creative approaches and innovative thinking."
-    },
-    {
-      icon: <BookOpen size={24} />,
-      title: "Continuous Learning",
-      description: "Constantly expanding knowledge and staying updated with the latest web technologies."
-    }
-  ];
+  // const skills = [
+  //   {
+  //     icon: <Code size={24} />,
+  //     title: "Frontend Development",
+  //     description: "Building responsive and interactive user interfaces with React, Next.js, and modern CSS frameworks."
+  //   },
+  //   {
+  //     icon: <Layout size={24} />,
+  //     title: "UI/UX Design",
+  //     description: "Creating intuitive and visually appealing designs focused on user experience and accessibility."
+  //   },
+  //   {
+  //     icon: <Zap size={24} />,
+  //     title: "Performance Optimization",
+  //     description: "Improving website speed and efficiency through code optimization and modern best practices."
+  //   },
+  //   {
+  //     icon: <Globe size={24} />,
+  //     title: "Web Applications",
+  //     description: "Developing full-stack web applications with secure authentication and database integration."
+  //   },
+  //   {
+  //     icon: <Palette size={24} />,
+  //     title: "Creative Solutions",
+  //     description: "Solving complex problems with creative approaches and innovative thinking."
+  //   },
+  //   {
+  //     icon: <BookOpen size={24} />,
+  //     title: "Continuous Learning",
+  //     description: "Constantly expanding knowledge and staying updated with the latest web technologies."
+  //   }
+  // ];
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1
-      }
-    }
-  };
+  // const containerVariants = {
+  //   hidden: { opacity: 0 },
+  //   visible: {
+  //     opacity: 1,
+  //     transition: {
+  //       staggerChildren: 0.1
+  //     }
+  //   }
+  // };
 
-  const itemVariants = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: { duration: 0.5 }
-    }
-  };
+  // const itemVariants = {
+  //   hidden: { y: 20, opacity: 0 },
+  //   visible: {
+  //     y: 0,
+  //     opacity: 1,
+  //     transition: { duration: 0.5 }
+  //   }
+  // };
 
   return (
     <div className="relative w-full min-h-screen pb-16">
