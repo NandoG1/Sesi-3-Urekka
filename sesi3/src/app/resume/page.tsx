@@ -39,7 +39,7 @@ export default function Resume(){
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     return(
-        <div>
+        <div className="px-16">
             <Background />
 
             <Navbar>

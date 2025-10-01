@@ -153,7 +153,7 @@ export default function Experience() {
   };
 
   return (
-    <div className="relative w-full min-h-screen">
+    <div className="relative w-full min-h-screen px-16">
       <Background />
 
       <Navbar>
