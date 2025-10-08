@@ -79,9 +79,9 @@ export default function Resume(){
             
             <div className="mx-auto container pt-35 flex justify-center items-center flex-col ">
                 <div className="mb-10">
-                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">My Resume</h1>
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">My Resume/CV</h1>
                     <div className="w-24 h-1 bg-black mx-auto mb-6"></div>
-                    <p className="text-xl text-gray-600 max-w-3xl text-center">Explore my Resume!</p> 
+                    <p className="text-xl text-gray-600 max-w-3xl text-center">Explore my Resume/CV!</p> 
                 </div>
                 <iframe src="/CV_ATS.pdf" className="w-full h-[80vh]"></iframe>
             </div>
