@@ -125,9 +125,9 @@ export default function NavbarDemo() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-6 py-3 bg-black text-white rounded-lg font-medium shadow-lg"
-              href="/experience"
+              href="/resume"
             >
-              Explore My Work
+              Explore My CV / Resume
             </motion.a>
             <motion.a
               href="/contact"
