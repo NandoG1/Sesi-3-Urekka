@@ -23,7 +23,7 @@ export default function Resume(){
       link: "/experience",
     },
     {
-      name: "Resume",
+      name: "CV",
       link: "/resume",
     },
     {

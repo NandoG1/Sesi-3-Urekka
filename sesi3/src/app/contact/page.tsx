@@ -26,7 +26,7 @@ export default function ContactPage() {
       link: "/experience",
     },
     {
-      name: "Resume",
+      name: "CV",
       link: "/resume",
     },
     {

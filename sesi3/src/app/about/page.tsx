@@ -29,7 +29,7 @@ export default function AboutPage() {
       link: "/experience",
     },
     {
-      name: "Resume",
+      name: "CV",
       link: "/resume",
     },
     {

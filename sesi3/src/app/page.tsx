@@ -27,7 +27,7 @@ export default function NavbarDemo() {
       link: "/experience",
     },
     {
-      name: "Resume",
+      name: "CV",
       link: "/resume",
     },
     {

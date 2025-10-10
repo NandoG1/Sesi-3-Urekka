@@ -24,7 +24,7 @@ export default function Experience() {
       link: "/experience",
     },
     {
-      name: "Resume",
+      name: "CV",
       link: "/resume",
     },
     {
